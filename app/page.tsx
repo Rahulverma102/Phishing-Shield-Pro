@@ -9,7 +9,7 @@ export default function Page() {
           <div className="flex items-center space-x-3">
             <span className="text-2xl">🛡️</span>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Phishing Detection
+              Phishing Shield Pro
             </span>
           </div>
           <div className="hidden md:flex items-center space-x-6">
@@ -67,7 +67,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <span className="text-2xl">🛡️</span>
-            <span className="text-xl font-bold">Phishing Detection</span>
+            <span className="text-xl font-bold">Phishing Shield Pro</span>
           </div>
           <p className="text-gray-400 mb-6">Advanced browser protection with enterprise-grade security analysis</p>
           <div className="flex justify-center space-x-8 text-sm text-gray-400">
@@ -77,7 +77,7 @@ export default function Page() {
             <span>✅ Certificate Validation</span>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-gray-500">
-            &copy; 2024 Phishing Detection. Built with advanced security in mind.
+            &copy; 2024 Phishing Shield Pro. Built with advanced security in mind.
           </div>
         </div>
       </footer>
