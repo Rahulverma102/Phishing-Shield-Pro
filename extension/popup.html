@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Shield</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="shield-icon">🛡️</div>
+                <h1>Phishing Shield</h1>
+            </div>
+            <div class="status-indicator" id="statusIndicator">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Checking...</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="current-site" id="currentSite">
+                <h3>Current Site Analysis</h3>
+                <div class="site-info">
+                    <div class="site-url" id="siteUrl">Loading...</div>
+                    <div class="risk-score" id="riskScore">
+                        <div class="score-circle" id="scoreCircle">
+                            <span id="scoreValue">--</span>
+                        </div>
+                        <div class="score-label">Risk Score</div>
+                    </div>
+                </div>
+                
+                <div class="risk-details" id="riskDetails" style="display: none;">
+                    <h4>Analysis Details</h4>
+                    <div class="details-grid" id="detailsGrid"></div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-primary" id="analyzeBtn">
+                    <span class="btn-icon">🔍</span>
+                    Analyze Current Site
+                </button>
+                
+                <button class="btn btn-secondary" id="reportBtn" style="display: none;">
+                    <span class="btn-icon">⚠️</span>
+                    Report as Phishing
+                </button>
+                
+                <button class="btn btn-secondary" id="whitelistBtn" style="display: none;">
+                    <span class="btn-icon">✅</span>
+                    Mark as Safe
+                </button>
+            </div>
+
+            <div class="stats" id="stats">
+                <h4>Protection Stats</h4>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value" id="blockedCount">0</span>
+                        <span class="stat-label">Sites Blocked</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="scannedCount">0</span>
+                        <span class="stat-label">Sites Scanned</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="settings-link">
+                <button class="link-btn" id="settingsBtn">Settings</button>
+            </div>
+        </footer>
+    </div>
+
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>Analyzing URL...</p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
